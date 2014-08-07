@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Fixed Backgrounds Gallery</title>
+		
+		<style type="text/css" media="screen">
+			
+			
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		
+		html, body {
+			height: 100%;
+		}
+		
+		body {
+			background-color: #c6d2d2;
+/*			background-color: #b0c9e8;*/
+			width: 300%;
+		}
+		
+		#container {
+			height: 100%;
+			width: 100%;
+		}
+		
+		.full {
+			height: 100%;
+			width: 33.3333%;
+			border: 0;
+			background-attachment: fixed;
+			background-size: cover;
+			float: left;
+			display: table;
+		}
+		
+		.full p {
+			text-align: center;
+			color: #eeffff;
+			font-family: Palatino, Georgia, Serif;
+			text-shadow: 1px 1px #aaa;
+			font-size: 35px;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+		
+		.full p em {
+			font-size: smaller;
+		}
+		
+		#first	{ background-image: url('img/c01.jpg'); }
+		#second	{ background-image: url('img/c02.jpg'); }
+		#third	{ background-image: url('img/c03.jpg'); }
+		
+		</style>
+		
+	</head>
+
+	<body id="index">
+		<div id="container">
+			<div class="full" id="first"><p>Camino de Santiago 2014<br /><br /><em>Scroll right, please.</em></p></div>
+			<div class="full" id="second"></div>
+			<div class="full" id="third"><p>Where will you go?</p></div>
+		</div>
+	</body>
+
+</html>
